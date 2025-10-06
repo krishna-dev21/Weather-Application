@@ -1,0 +1,316 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper
+{
+   height: 800px;
+   width: 100vw;
+   background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+   position: relative;
+   /* display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center; */
+} 
+
+/* alway on top section */
+
+[always-top-on]
+{
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.switchbuttons
+{   appearance: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+[your-and-seach-weather]
+{
+    display: flex;
+    gap: 10rem;
+}
+
+.dono-tab-piche-ka-style
+{
+    height: 2rem;
+    width: 9rem;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* alway on top section end */
+
+
+/* grant access container start */
+
+.grant-access-container
+{   position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1;
+    opacity: 0;
+    /* imp */
+ }
+
+
+[grantaccess2]
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.grantaccessbutton
+{
+    appearance: none;
+    border: none;
+    background: transparent;
+    height: 2rem;
+    width: 15rem;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+
+}
+
+.grantaccessbutton:hover
+{
+    scale: 1.05;
+}
+
+/* grant access container end */
+
+.trans
+{
+    transform: translateY(100px);
+}
+
+/* lloading  */
+.loadingconatiner
+{   position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+/* loading end */
+
+/* not found */
+.notfound
+{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+}
+
+
+/* your location container start */
+
+.my-weather
+{   position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* imp */
+    opacity: 0;
+}
+
+.citynamecontainer
+{   
+    display: flex;
+    gap: 10px;
+}
+
+[cityname]
+{
+    font-size: 2rem;
+}
+
+[conditon]
+{
+    font-size:1.3rem 
+}
+
+[wind-humid-cloud-container]
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.my-weather-glass-boxes
+{   
+    width: 10rem;
+    height: 9rem;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+/* your location container  end */
+
+
+
+/* search wheather container  start*/
+
+.search-weather-container
+{   
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    opacity: 0;
+    z-index: 10;
+}
+
+.inputdebhaimeko
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100vw;
+}
+
+.boxformagnifineglass
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 50%; */
+    background: rgba( 144, 19, 254, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 50%;
+}
+
+[citysearchinput]
+{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 60%;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+
+}
+
+[citysearchinput]::placeholder
+{
+    transform: translateX(10px);
+    font-size: 1.1rem;
+}
+
+
+.active
+{
+    opacity: 1;
+}
+/* search-weather-container end */
+
+
+/* sesrch weather container start */
+
+.search-weather
+{   position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* imp */
+    opacity: 0;
+}
+
+.searchcitynamecontainer
+{   
+    display: flex;
+    gap: 10px;
+}
+
+[searchcityname]
+{
+    font-size: 2rem;
+}
+
+[searchconditon]
+{
+    font-size:1.3rem 
+}
+
+[searchwind-humid-cloud-container]
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.searchmy-weather-glass-boxes
+{   
+    width: 10rem;
+    height: 9rem;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+/*search  weather container  end */

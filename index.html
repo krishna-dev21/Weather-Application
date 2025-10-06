@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| weather app</title>
+    <link rel="shortcut icon" href="assets/humidity.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+      
+    <!-- always one top conatiner -->
+     <div always-top-on>
+        <h1>WEATHER APP</h1>
+        <div your-and-seach-weather>
+            <Button class="switchbuttons"  yourtab>Your Weather</Button>
+            <Button class="switchbuttons" searchtab>Search Weather</Button>
+        </div>
+     </div>
+    <!-- always one top conatiner end-->
+
+
+     <!-- grant access container start -->
+     <div class="grant-access-container" >
+        <img src="assets/location.png" alt="_blank" loading="lazy" width="90rem">
+        <div grantaccess2>
+            <h2>Grant Location Acess</h2>
+            <p>Allow Access To get Wheather Information</p>
+            <button class="grantaccessbutton">GRANT ACCESS</button>
+        </div>
+    </div>
+     <!-- grant access container end -->
+
+
+     <!-- loading start-->
+    <div class="loadingconatiner">
+        <img src="assets/loading.gif" alt="" loading="lazy" width="200rem">
+    </div>
+     <!-- loading end -->
+
+     <!-- not found start -->
+      <div class="notfound">
+        <img src="assets/not-found.png" alt="_black" loading="lazy" width="300rem">
+      </div>
+     <!-- not found end -->
+
+
+      <!-- your location conatiner -->
+       <div class="my-weather">
+        <div class="citynamecontainer">
+            <p cityname></p>
+            <img src="" loading="lazy" width="50rem" alt="_blank" countryimg>
+        </div>
+        <p condition></p>
+        <img src="" alt="" loading="lazy" width="70rem" climateimg>
+        <h1 temperature></h1>
+        <div wind-humid-cloud-container>
+            <div class="my-weather-glass-boxes">
+                <img src="assets/wind.png"  loading="lazy" width="50rem" alt="" >
+                <p >WINDSPEED</p>
+                <p windspeed></p>
+            </div>
+
+            <div class="my-weather-glass-boxes">
+                <img src="assets/humidity.png"  loading="lazy" width="50rem" alt="">
+                <p >HUMIDITY</p>
+                <p humidity></p>
+            </div>
+
+            <div class="my-weather-glass-boxes">
+                <img src="assets/cloud.png"  loading="lazy" width="50rem" alt="">
+                <p>CLOUDS</p>
+                <p cloundspercentage></p>
+            </div>
+        </div>
+       </div>
+      <!-- your location conatiner end-->
+
+
+      <!-- search-location-container staart -->
+      <form class="search-weather-container">
+
+        <div class="inputdebhaimeko">
+            <input type="search" name="" placeholder="search for City..." id="" citysearchinput>
+            <div class="boxformagnifineglass">
+                <img src="assets/search.png" alt="_blank" loading="lazy" width="30rem">
+            </div>
+        </div>
+      </form>
+      <!-- search-location-container end --> 
+
+      <!-- search weather conatiner  start -->
+      <!-- <div class="search-weather">
+        <div class="searchcitynamecontainer">
+            <p searchcityname></p>
+            <img src="" loading="lazy" width="50rem" alt="_blank" searchcountryimg>
+        </div>
+        <p searchcondition></p>
+        <img src="" alt="" loading="lazy" width="70rem" searchclimateimg>
+        <h1 searchtemperature></h1>
+        <div searchwind-humid-cloud-container>
+            <div class="searchmy-weather-glass-boxes">
+                <img src="assets/wind.png"  loading="lazy" width="50rem" alt="" >
+                <p >WINDSPEED</p>
+                <p searchwindspeed></p>
+            </div>
+
+            <div class="searchmy-weather-glass-boxes">
+                <img src="assets/humidity.png"  loading="lazy" width="50rem" alt="">
+                <p >HUMIDITY</p>
+                <p searchhumidity></p>
+            </div>
+
+            <div class="searchmy-weather-glass-boxes">
+                <img src="assets/cloud.png"  loading="lazy" width="50rem" alt="">
+                <p>CLOUDS</p>
+                <p searchcloundspercentage></p>
+            </div>
+        </div>
+       </div> -->
+      <!-- search weather conatiner end-->
+
+
+
+    </div>
+
+    <!-- script  -->
+     <script src="script.js"></script>
+</body>
+</html>
